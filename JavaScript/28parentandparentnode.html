@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer {
+            background-color: aqua;
+            padding: 50px;
+        }
+
+        #inner {
+            background-color: palevioletred;
+            padding: 50px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+
+        <div id="inner">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ad totam, rerum, velit in ipsam saepe odit
+            aspernatur possimus magni fugit corporis quo minima nam adipisci explicabo accusamus cupiditate itaque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officiis fugit hic. Dolorem pariatur ad
+            veniam fugit officia natus, sint, quae cupiditate officiis reiciendis odio. Nesciunt ad reprehenderit
+            perferendis corporis.
+        </div>
+
+    </div>
+
+    <div id="sec">
+        <h1 id="s1">hi</h1>
+        <h2 id="s2">hello</h2>
+        <h3 id="s3">by</h3>
+    </div>
+    <script>
+        document.getElementById("inner").parentElement.style.backgroundColor='yellow';
+        document.getElementById("outer").children[0].style.backgroundColor='blue';
+        var d=document.getElementById("s2").nextElementSibling;
+        console.log(d);
+        document.getElementById("s1").nextSibling;
+        console.log(num);
+
+        
+    </script>
+</body>
+
+</html>

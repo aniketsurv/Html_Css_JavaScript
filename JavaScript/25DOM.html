@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="maindiv">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui officia, voluptas totam soluta assumenda possimus
+        doloremque placeat enim ab obcaecati quod rerum vitae rem! Modi delectus temporibus eius quidem hic.
+    </div>
+
+    <div id="second">
+        Lorem ipsum dolor sit amet celeonsectetur, adipisicing elit. Quidem eligendi consequuntur velit quam minima vel,
+        libero quos fugiat corporis provident porro magnam veritatis necessitatibus, voluptate iusto ducimus soluta
+        dolor labore.
+    </div>
+    <script>
+        var n1 = document.getElementById("maindiv").innerText;
+        document.write(n1);
+        
+        var n2 = document.getElementById("second").innerHTML;
+        console.log(n2);
+       
+
+        var element;
+        element=document.getElementById("second").getAttribute("id");
+        console.log(element);
+
+    </script>
+</body>
+
+</html>

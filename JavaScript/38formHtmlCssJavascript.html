@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #forms {
+            background-color: aqua;
+            border: 2px solid black;
+            width: 400px;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        input {
+            border-radius: 5px;
+            padding: 5px;
+
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="forms" action="">
+        <label for="fname">FIRSTNAME</label><br>
+        <input type="text" id="fname"><br><br>
+        <label for="lname" >LASTNAME</label><br>
+        <input type="text" id="lname"><br><br>
+        <label for="email">EMAIL</label><br>
+        <input type="text" id="email"><br><br>
+        <label for="age">AGE</label><br>
+        <input type="text" id="age"><br><br>
+        <label for="gender" >GENDER</label><br>
+        <input type="text" id="gender"><br><br>
+        <input type="button" value="SAVE" id="button" type="add" onclick="display()"><br><br>
+    </form>
+
+    <table id="insertdata">
+        <tr>
+            <th>FIRSTNAME</th>
+            <th>LASTNAME</th>
+            <th>EMAIL</th>
+            <th>AGE</th>
+            <th>GENDER</th>
+        </tr>
+        
+    </table>
+
+    <script>
+
+        var arr1=[];
+        var arr2=[];
+        var arr3=[];
+        var arr4=[];
+        var arr5=[];
+
+        var n=1;
+        var x=0;
+
+        function display(){
+
+            var addrow=document.getElementById("insertdata");
+            var newrow=addrow.insertRow(n);
+
+             arr1[x]=document.getElementById('fname').value;
+             arr2[x]=document.getElementById('lname').value;
+             arr3[x]=document.getElementById('email').value;
+             arr4[x]=document.getElementById('age').value;
+             arr5[x]=document.getElementById('gender').value;
+
+             var cell1=newrow.insertCell(0);
+             var cell2=newrow.insertCell(1);
+             var cell3=newrow.insertCell(2);
+             var cell4=newrow.insertCell(3);
+             var cell5=newrow.insertCell(4);
+            
+             cell1.innerHTML=arr1[x];
+             cell2.innerHTML=arr2[x];
+             cell3.innerHTML=arr3[x];
+             cell4.innerHTML=arr4[x];
+             cell5.innerHTML=arr5[x];
+
+             x++;
+             n++;
+             
+            console.log(arr1);
+            console.log(arr2);
+            console.log(arr3);
+            console.log(arr4);
+            console.log(arr5);
+        }
+    </script>
+</body>
+
+</html>

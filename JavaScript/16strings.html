@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="stringdemo"></p>
+    <h2 id="roommate"></h2>
+    <h2 id="rrrrm"></h2>
+
+    <script>
+        let s = "raju is good boy";
+
+        document.getElementById('stringdemo').innerHTML = s + "<br>" + s.length +
+            "<br>" + s.charAt(5) + "</br>" + s.endsWith('i') + "</br>" + s.startsWith('raju');
+
+        let p = "       sourabh         and sachin are good roommates    ";
+
+        document.getElementById('roommate').innerHTML = p.trimStart() + "</br>" + p.slice(10, 30) +
+            "</br>" + p.toLocaleUpperCase() + "</br>" + p.fontsize(5) + '<br>' + p.fontcolor("red")
+            + "</br>" + p.replaceAll('s', 't');
+
+        let ss = "yogesh is good pubg player";
+
+        document.getElementById('rrrrm').innerHTML = ss.charAt(1) + "</br>" + ss.charCodeAt(1);
+
+
+        let num = "5";
+        document.write(num.padStart(7, 2));
+
+        let str = "9";
+        document.write("</br>" + str.padEnd(5, 6) + "<br>");
+
+
+        let g = "sourabh, raju and sachin are very good student in hefshine. sourabh, raju and sachin regularly wake up in early morning and go to the hefshine to complete our daily study ";
+        const iterator = g.matchAll("raju");
+        document.write(Array.from(iterator));
+
+
+        let strin="raju is a good boy";
+        document.write("<br>"+strin.includes("is"));
+        document.write("<br>"+strin.repeat(6));
+
+        
+
+    </script>
+
+</body>
+
+</html>

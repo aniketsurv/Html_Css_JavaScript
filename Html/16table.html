@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+
+    <style>
+        table,
+        td,
+        th {
+            border: 2px solid blue;
+            background-color: palegreen;
+        }
+
+        td:nth-child(odd) {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="width: 60%;">
+        <tr>
+            <th>RollNo</th>
+            <th>Name</th>
+            <th>Marks</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>aniket</td>
+            <td>85</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>sachin</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>raju</td>
+            <td>99</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>yogesh</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>sourabh</td>
+            <td>100</td>
+        </tr>
+    </table><br><br><br>
+
+    <div>
+        <table>
+            <tr>
+                <th>RollNo</th>
+                <th colspan="3">Name</th>
+
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>aniket</td>
+                <td>85</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>sachin</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>raju</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td rowspan="4">4</td>
+                <td>yogesh</td>
+                <td>90</td>
+            </tr>
+            <tr>
+
+                <td>sourabh</td>
+                <td>100</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

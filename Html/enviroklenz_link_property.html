@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviroklenz Template</title>
+    <style>
+        body {
+            background-color: #cccccc;
+            margin: 0%;
+        }
+       
+        img{
+            border: 0;
+        }
+        .wrapper{
+            width: 100%;
+            background-color: white;
+            padding-bottom: 50px;
+        }
+        .main{
+            background-color: #fff;
+            margin:0 auto;
+            max-width: 600px;
+            border-spacing: 0;
+            font-family: sans-serif;
+            color:#171a1b
+        }
+        .two-cloumns{
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .cloumn{    
+            width: 50%;
+            text-align: left;
+            
+        }
+        .cloumn2{   
+            width: 50%; 
+            margin-right:20px; 
+            text-align: right;
+            
+        }
+        .grey{
+            color: gray;
+        }
+        .bp{
+            padding-bottom: 10px ;
+        }
+        .three-cloumns{
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .thirdcol{
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .bBrd{border-width:0px 0px 1px 0px;}
+        .brd{border-style:solid;border-color:lightgray;}
+
+        .child{
+            flex: 1 1 270px;
+        }
+        .fseig{
+            font-size: 8px;
+        }
+        .fst{
+            font-size: 10px;
+        }
+        .marginzero{
+            margin: 0%;
+        }
+        .fstw{
+            font-size: 12px; 
+        }
+        .padtftf{
+            padding: 10px 5% 10px 5%;
+        }
+        .paddingtztz{
+            padding: 2px 0px 2px 0px ;
+        }
+        .tac{
+            text-align: center;
+        }
+        .displaystart{
+            display: flex;
+            flex-wrap: wrap;
+            text-align: start;
+        }
+        .lineheifif{
+            line-height: 15px;
+        }
+        .txtend{
+            text-align: end;
+        }
+        .marginten{
+            margin: 10px;
+        }
+        .bradius{
+            border-radius: 20px;
+        }
+        .bradiusfifty{
+            border-radius: 50%;
+        }
+        .clrblue{
+            color: blue;
+        }
+        .prtwo{
+            padding-right: 2px;
+        }
+        @media screen and (max-width: 575px) {
+            .displaystart  {
+                display: block;
+                padding-left: 5px;
+            }
+            .thirdcol{
+                display: block;
+                margin: 0 auto;
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main" width = '100%'>
+            <div  style="background-color: #E6F2FF">
+                <div class="two-cloumns" style ="padding: 10px 5px 10px 5px;">
+                    <div class="cloumn" style="margin-left:10px">
+                            <img width="136px" src="https://tempdev.clouzer.com/assets/images/Logo.png"   alt="This is Enviroklenz image">
+                    </div>
+                    <div class="cloumn2">
+                            <div class="fst" style="margin-bottom: 5px;">+(000) 123-456-789</div>
+                            <div class="fst">enviroklenz@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="tac">
+                <h4 class="marginten">Link your property to discover your SMART place</h4>
+                <div style="font-size: 15px;">
+                    Hello, userMailId
+                </div>
+                <div class="grey fstw padtftf">
+                    We're elated to welcome you to EnviroKlenz - your go-to platform for seamless property management!&#127969;&#10024;
+                </div>
+                <div class="grey fstw padtftf">
+                    Your property journey is about to get a whole lot smoother, and we're excited for you to discover the array of tools and features we've curated just for you.&#129321;&#129310;
+                </div>
+            </div>
+            <div class="bradius"  style="padding: 20px 0px 20px 0px ;background-color: rgb(245, 243, 250);">
+                <!-- <div class="tac" >
+                    <img class="bradius fstw"  style="width: 90%;" src="propertyImage"   alt="This is Hotel image">
+                </div> -->
+                <div class="three-cloumns" >
+                    <div class="marginten" style="width: 345px; text-align: start; padding: 0px 0px 0px 30px ;">
+                        <div>
+                            <h4 style="margin: 7px 0px 7px 0px ;">propertyName</h4>
+                        </div>   
+                        <div class="fst paddingtztz" >
+                            <img style="height: 10px; width: 10px;" src="https://build.clouzerindia.com/assets/images/logo/location_on_FILL0_wght100_GRAD200_opsz24 1.png" alt="Image not found">
+                            orgName, departmentName, propertyAddress
+                        </div>
+                        <div class="fst paddingtztz" >
+                            <img style="height: 10px; width: 10px;" src="https://build.clouzerindia.com/assets/images/logo/bed_FILL0_wght100_GRAD200_opsz24 1.png" alt="Image not found">
+                            Floors (propertyFloor), Rooms(propertyRoom)
+                        </div>
+                        <div class="fst clrblue paddingtztz" >
+                           Scan the QR code shown to link your property
+                        </div>
+                    </div>
+                    <div class="marginten" style="width: 180px">
+                        <div>
+                            <img width="50%" style="height:150px; width:150px;" class="fstw" src="cid:qrCode_image_cid"  alt="This is QR code">
+                        </div>
+                        <div class="fst">
+                            qrStaticNumber
+                        </div>
+                    </div>
+                </div>
+                <div class="padtftf" >
+                    <div style="width: 100%;" class="bBrd brd"></div>
+                </div>
+                <div class="tac" style="padding: 0px 40% 0px 40% ; ">
+                    <div class="fstw bradius" style="background-color: #001933; color: white; padding: 10px 0px 10px 0px ;">
+                        View all info
+                    </div>
+                </div>   
+            </div>
+            <div class="thirdcol">
+                <div  style="width: 270px; margin-top: 25px;">
+                    <!-- <div>
+                        <img class="bradiusfifty" style="height: 150px; width: 150px;"  src="https://temp.clouzer.com/hdfs/will.smith@enviroklenz.clouzer.com/Cloud Vault/Media/Upload/ProfileImages/will.smith@enviroklenz.clouzer.com?op=OPEN"   alt="This is QR code">    
+                    </div> -->
+                    <div style="height: 120px; background-color: #001933;color: white; text-align: start; padding: 0px 0px 0px 20px ; border-radius: 10px;">
+                        <div>
+                            <h4 class="marginzero" style="padding: 7px 0px 7px 0px;">Will Smith</h4>
+                        </div>   
+                        <div class="fstw" style=" padding: 0px 0px 7px 0px;">
+                            <h5 class="marginzero">Provisioning Agent</h5>
+                        </div>
+                        <div class="fst paddingtztz" style="color: #E0E0E0;">
+                            <img style="height: 10px; width: 10px;" src="https://build.clouzerindia.com/assets/images/logo/Vector.png" alt="Image not found">
+                           +(000) 987-654-321
+                        </div>
+                        <div class="fst paddingtztz" style=" color: #E0E0E0;">
+                          <img style="height: 10px; width: 10px;" src="https://build.clouzerindia.com/assets/images/logo/Vector (1).png" alt="Image not found">
+                          will.smith@enviroklenz.com
+                        </div>
+                    </div>
+                    
+                </div>
+                <div  style="width: 270px; margin-top: 25px;">
+                    <!-- <div>
+                        <img class="bradiusfifty" style="height: 150px; width: 150px;"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToiSd3Ckgs0nG9fUw1FpgxJo_YUcvvWLTYvcEmIiRQ0gCREtV3BDaMeYwMSV8ok40Vdsg&usqp=CAU"   alt="This is QR code">      
+                    </div> -->
+                    <div style=" height: 120px ;background-color: rgb(245, 243, 250); text-align: start; padding: 0px 0px 0px 20px ; border-radius: 10px;" >
+                        <div>
+                            <h4 class="marginzero" style="padding: 7px 0px 7px 0px;">Location</h4>
+                        </div>   
+                        <div class="fstw"  style="padding: 0px 0px 7px 0px;">
+                            <h5 class="marginzero">orgName,</h5>
+                        </div> 
+                        <div class="fst paddingtztz" >
+                            departmentName, propertyAddress
+                        </div>
+                        <div class="fst txtend" style="padding: 0px 5px 0px 0px ;">
+                            <a href="http://maps.google.com/?q=">Open google map</a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div   style="padding: 10px 0px  10px 0px ;">
+                <div class="grey tac" >
+                    <h4 class="marginzero bp">But that's not all! As a welcome gift, you'll enjoy exclusive benefits:</h4>  
+                </div>
+                <div>
+                    <div class="displaystart lineheifif">
+                        <div class="fseig prtwo">&#128073;&nbsp;Real-Time Air Quality Insights:</div>
+                        <div class="grey fseig">Receive instant updates on the air quality in your porperty, ensuring a healthy and comfortable living environment.</div>
+                    </div>
+                    <div class="displaystart lineheifif">
+                        <div class="fseig prtwo" >&#128073;&nbsp;Personalized Recommendations:</div>
+                        <div class="grey fseig" >Get customized suggestions to imporove air quality based on your specific needs and preferences.</div>
+                    </div>
+                    <div class="displaystart lineheifif">
+                        <div class="fseig prtwo" >&#128073;&nbsp;Historical Data Tracking:</div>
+                        <div class="grey fseig" >Monitor changes in air quality over time, allowing you to make informed decisions to enchange your overall Well-Being.</div>
+                    </div>
+                    <div class="displaystart lineheifif">
+                        <div class="fseig prtwo" >&#128073;&nbsp;Advanced Filtration Technology:</div>
+                        <div class="grey fseig" >Enjoy cleaner and fresher air with cutting-edge filtration systems that capture and eliminate a wide range of pollutants.</div>
+                    </div>
+                    <div class="displaystart lineheifif">
+                        <div class="fseig prtwo">&#128073;&nbsp;Energy Efficiency:</div>
+                        <div class="grey fseig" >Experience a combination of powerful performance and energy efficiency, contributing to a sustainable and eco-friendly lifestyle.</div>
+                    </div>
+                    <div class="displaystart lineheifif">
+                        <div class="fseig prtwo" >&#128073;&nbsp;Remote Control:</div>
+                        <div class="grey fseig" >Manage and control your connected devices from anywhere using your smartphone, adding convenience to your daily routine.</div>
+                    </div>
+                    <div class="txtend clrblue fseig" style="padding: 0px 20px 0px 0px ;">
+                       and many more...
+                    </div>
+                </div>
+            </div>  
+            <div style="background-color: #E6F2FF">
+                <div class="tac">
+                    <h4 class="marginzero" style=" padding: 7px 0px 7px 0px;">Get ready for the hassle-free journey With EnviroKlenz,</h4>  
+                </div>
+                <div class="tac" >
+                    <h4 class="marginzero" style=" padding: 7px 0px 7px 0px;">Download our app</h4>  
+                </div>
+                <div style="padding: 0px 40px 0px 40px;" class="tac">
+                    <div class="two-cloumns">
+                        <div style="width: 50%; height: 70px ;background-image: url('https://build.clouzerindia.com/assets/images/templates/cbyge/android-icon.png'); background-size: contain; background-repeat: no-repeat; " >
+                           
+                        </div>
+                        <div style="width: 50%; height: 70px ; background-image: url('https://build.clouzerindia.com/assets/images/templates/cbyge/appstore-icon.png');background-size: contain; background-repeat: no-repeat; ">
+                          
+                        </div>   
+                    </div>     
+                </div>
+                <div class="three-cloumns" style="padding: 10px 0px  10px 0px ;">
+                    <div  style="width: 370px; padding: 0px 0px  0px 20px ; text-align: start;">
+                        <div style="width: 250px; margin-bottom: 5px;">
+                            <img width="200px"  src="https://tempdev.clouzer.com/assets/images/Logo.png"   alt="This is Enviroklenz image">
+                        </div>
+                        <div class="grey fstw">KEEP LIFE PURE WITH A PURPOSE
+                        </div>
+                        <div class="grey fst">Rewrite the rules on true healthy living, through clean products that let you embrace life in its purest form
+                        </div>
+                    </div> 
+                    <div  style="width: 210px; ">
+                        <div class="fstw" style="display: flex;justify-content: center; padding: 10px 0px 10px 0px;">
+                            <div style="padding: 5px;">Privacy</div>
+                            <div style="padding: 5px;">About Us</div>
+                            <div style="padding: 5px;">Services</div>
+                         </div>
+                         <div class="fstw" style="display: flex; gap: 12px; justify-content: center">
+                            <img class="bradiusfifty" style="height: 24px; width: 24px;"  src="https://build.clouzerindia.com/assets/images/logo/bxl-instagram-alt.png"   alt="This is EnviroKlenz logo">   
+                            <img class="bradiusfifty" style="height: 24px; width: 24px;"  src="https://build.clouzerindia.com/assets/images/logo/bxl-facebook.png"   alt="This is EnviroKlenz logo">   
+                            <img class="bradiusfifty" style="height: 24px; width: 24px;"  src="https://build.clouzerindia.com/assets/images/logo/bxl-linkedin-square.png"   alt="This is EnviroKlenz logo">   
+                            <img class="bradiusfifty" style="height: 24px; width: 24px;"  src="https://build.clouzerindia.com/assets/images/logo/bxl-youtube.png"   alt="This is EnviroKlenz logo">   
+                         </div>
+                    </div> 
+                </div>
+                <div class="padtftf" >
+                    <div style="width: 100%; border-color: white;" class="bBrd brd"></div>
+                </div>
+                <div class="bp" style="justify-content: center;display: flex ;text-align: center;">
+                    <img class="bradiusfifty" style="height: 20px; width: 20px;"  src="https://build.clouzerindia.com/assets/images/logo/Clouds_Logo.svg"   alt="This is EnviroKlenz logo">   
+                    <div>Powered by Clouzer<sup class="fst">TM</sup></div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>

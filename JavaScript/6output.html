@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- outupt using inner html -->
+
+    <h1 id="rrrr">hi is nobita</h1>
+
+    <h1 id="changeTheFont">aniket anil surve</h1>
+
+    <button onclick="clickkk()">clickkkkk</button>
+
+    <script>
+       
+           document.getElementById('rrrr').innerHTML="shi is shizuka";
+
+          function clickkk()
+           {
+            document.getElementById('changeTheFont').innerHTML='red';           
+           }
+        
+    </script>
+
+    <!-- output using console.log and console.warn -->
+
+    <button onclick="oncliccccc()">WriteOnConsole</button>
+
+    <script>
+        function oncliccccc()
+        {
+            console.log("I am console.log");
+            console.warn("I am console.warn");
+        }
+    </script>
+
+    <!-- output using document.write() method -->
+
+    <button onclick="oncl()">ONClickWrite</button>
+
+    <script>
+        function oncl(){
+            document.write("This is yogesht");
+        }
+    </script>
+
+    <!-- output using window.alert -->
+
+    <button onclick="aaaaall()">printalert</button>
+
+    <script>
+        function aaaaall(){
+            window.alert("This is wrong information");
+            alert(5*2);        
+        }
+    </script>
+
+    <!-- Print this total page on button click -->
+
+    <button onclick="prints()">PrintThisPage</button>
+    <script>
+
+        function prints()
+        {
+         window.print();
+        }
+    </script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=["sachin","yogesh","sourabh","raju","abuje"];
+        document.write(a+"<br>");
+        a.sort();
+        document.write(a+"<br>");
+        a.reverse();
+        document.write(a+"<br>");
+        a.pop();
+        document.write(a+"<br>");
+        a.push("aniket");
+        document.write(a+"<br>");
+        a.shift();
+        document.write(a+"<br>");
+        a.unshift("YogeshGade");
+        document.write(a+"<br>");
+
+        var b=["sourabh","raju","abuje"];
+        var c=["sachin","yogesh"];
+        var m=a.concat(b,c);
+        document.write(m+"<br>");
+        var s= m.join( " -*- "); // join kelya nantar string format madhe gela array
+        document.write(s+"<br>");
+
+        var arrs=["geeta","sheeta","Tejaswini","priya","Gauri"];
+        document.write(arrs+"<br>");
+        var sss=arrs.slice(1,3);
+        document.write(sss+"<br>");
+        sss.splice(1,0,"aniket","sachin","sourabh");
+        document.write(sss+"<br>");
+        sss.splice(1,1);  // slice used for you can store/delete element or value  exact position/index
+        document.write(sss+"<br>");
+
+        var str=["aniket","ajay","aniket","rashid","tukaram","shiva"];
+        document.write( str.indexOf("aniket")+"<br>");
+        document.write(str.lastIndexOf("aniket"));
+        document.write("<br>"+str.includes("aniket")+"<br>");
+
+        var ages=[10,20,34,50];
+        document.write(ages.findIndex(2));
+
+        
+        
+
+    </script>
+</body>
+</html>

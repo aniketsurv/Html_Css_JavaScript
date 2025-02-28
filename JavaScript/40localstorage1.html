@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="demo"></h1>
+    <h1 id="momo"></h1>
+    <h1 id="remo"></h1>
+    <h1 id="komo"></h1>
+    <h1 id="somo"></h1>
+    <h1 id="namo"></h1>
+    <h1 id="showarrr"></h1>
+
+    <script>
+        localStorage.setItem("firstName","Aniket");
+        localStorage.setItem("lastName","surve");
+        localStorage.setItem("id",1);
+        localStorage.setItem("marks",52);
+        localStorage.setItem("Array",'[1,"raju",365]');
+        localStorage.setItem("object",'{"name":"John", "age":30, "car":null}');
+
+        document.getElementById("demo").innerHTML=localStorage.getItem("firstName");
+        document.getElementById("momo").innerHTML=localStorage.getItem("lastName");
+        document.getElementById("remo").innerHTML=localStorage.removeItem("id");
+        document.getElementById("komo").innerHTML=localStorage.getItem("marks");
+        document.getElementById("somo").innerHTML=localStorage.getItem("Array");
+        document.getElementById("namo").innerHTML=localStorage.getItem("object");
+
+
+
+        let arr=[5,"yogesh",99];
+        localStorage.setItem("arrray",JSON.stringify(arr));
+        
+        document.getElementById("showarrr").innerHTML=JSON.parse(localStorage.getItem("arrray"));
+      
+        console.log(JSON.parse(localStorage.getItem("arrray")));
+        console.log(localStorage.getItem("arrray"));
+
+        
+    </script>
+</body>
+</html>

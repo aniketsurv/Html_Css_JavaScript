@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo1"></h1>
+    <h1 id="demo2"></h1>
+    <h1 id="demo3"></h1>
+
+    <script>
+
+        const num1=new Set([2,3,4,55]);
+        let text="";
+        for(let x of num1){
+            text+=x+" ";
+        }
+        document.getElementById("demo1").innerText=text;
+
+
+        const num2=new Set();
+        num2.add("aniket");
+        num2.add("akash");
+        num2.add(30);
+
+        let text2="";
+        for (const i of num2) {
+            text2 +=i+" ";
+        }
+        document.getElementById("demo2").innerText=text2;
+
+        const num3=new Set();
+        num3.add("a");
+        num3.add("a");
+        num3.add("a");
+        num3.add("a");
+        num3.add("b");
+        
+        document.getElementById("demo3").innerText=num3.size;
+        
+    </script>
+</body>
+</html>

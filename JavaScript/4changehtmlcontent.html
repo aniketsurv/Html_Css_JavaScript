@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!-- change element text without button click -->
+    <h1 id="demoo">This is aniket</h1>
+
+    <script>
+        document.getElementById("demoo").innerHTML="This is aniket anil surve";
+        
+    </script>
+
+    <!-- change element text on button click -->
+
+
+    <h2 id="secondid">this is raju</h2>
+
+    <button onclick='document.getElementById("secondid").innerHTML="This is raju deshmukh"'>Click This button</button>
+
+
+    <!-- change style (font size) on click button -->
+
+    <div id="ssize">
+        This is aniket
+    </div>
+
+    <button onclick="document.getElementById('ssize').style.fontSize='50px'">clickTochangeFontSize</button>
+
+    <!-- change style ( hide text ) on button click -->
+
+    <div id="hiiidd">This is hide text</div>
+
+    <button onclick="document.getElementById('hiiidd').style.display='none'">click</button>
+
+    <!-- change style (color & fontsize) on button click -->
+
+    <div id="coloor">This is my color</div>
+
+    <button onclick="document.getElementById('coloor').style.color='red',document.getElementById('coloor').style.fontSize='50px';">clickmeforchangecolor</button>
+
+    
+</body>
+</html>

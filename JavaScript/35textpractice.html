@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="demo" type="text">
+    <button id="button" onclick="myFunction()">clickMe</button>
+    <h3 id="output"></h3>
+
+
+    <script>
+
+        function myFunction() {
+
+            let x = document.getElementById("demo").value;
+
+            if (x.trim() == "") {
+                document.getElementById("output").innerText = "Empty text";
+            }
+            else if (isNaN(x)) {
+                document.getElementById("output").innerText = "Not a Number";
+            }
+
+            else {
+                x = Number(x);
+
+                if (x >= 1 && x <= 100) {
+                    document.getElementById("output").innerText = "This number in between 1-100";
+                }
+                if (x > 100) {
+                    document.getElementById("output").innerText = "This is big Number";
+                }
+                if (x < 0) {
+                    document.getElementById("output").innerText = "This is negative&zero";
+                }
+                if (x == 0) {
+                    document.getElementById("output").innerText = "This is zero";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

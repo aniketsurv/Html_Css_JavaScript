@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demoo"></h1>
+    <script>
+        function myfunction(p1,p2){
+            return p1+p2;
+        }
+        document.write("This is addition "+myfunction(5,4));
+
+        
+        function numberssfun(x1,x2)
+        {
+            return x1*x2;
+        }
+
+        document.getElementById('demoo').innerHTML=numberssfun(9,8);
+        
+        //function with parameter and with return value
+        var num = mycfu(7, 2);
+       
+        function mycfu(t1,t2){
+            return t1%t2;
+        }
+        document.write("<br> This is remainder : "+num);
+
+        //function without parameter and without return value
+        function rada(){
+            document.write("<br>hello friend");
+        }
+        rada();
+        rada();
+        rada();
+    </script>
+</body>
+</html>

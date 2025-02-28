@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2 id="arr"></h2>
+
+    <h2 id="sec"></h2>
+
+    <h2 id="thi"></h2>
+
+    <h2 id="four"></h2>
+    <script>
+        const a=["raju","aniket","yogesh", "prakash","sachin","sourabh"];
+
+        a.sort();
+        delete a[1];
+        
+        for(let i=0;i<a.length; i++)
+        {
+            document.write(a[i]+" ");
+        }
+
+
+        const b=new Array("tushar","sachin","pinki","chinki");
+
+        let s="";
+        for(let i=0; i<b.length; i++){
+           s+=b[i]+" ";
+        }
+        document.getElementById('arr').innerHTML=s;
+
+        let c=["aniket","sourabh",233];
+        document.getElementById("sec").innerHTML=c.toString(); // convert array to string
+
+        const fruit=["sachin","jan","sanem",90];
+        document.getElementById('thi').innerHTML=fruit.join(" * "); // element join karte __ ne
+
+        const f=["anjli","ram","balkrishna"];
+        f.push("raju");         // last la add karte
+        document.write("<br>"+f); 
+        f.pop();                // last remove karte
+        document.write("<br>"+f);
+        f.shift();              // first remove karte
+        document.write("</br>"+f);
+        f.unshift("aniket");    // frist add karte
+        document.write("<br>"+f);
+        f[f.length]="najuka";   // length la add
+        document.write("<br>"+f)
+
+        var con=f.concat(fruit);
+        document.write("</br>"+con);  //string concat
+
+        var kkk=["somu","gomu","paka","aniket","sourabh"];
+        kkk.reverse();
+        document.write("<br>"+kkk);
+
+
+        let mm=[444,5,6,8,9,121,15];
+
+        let min=Number.MAX_VALUE;
+        let max=Number.MIN_VALUE;
+        for(let i=0;i<mm.length; i++)
+        {
+            if(mm[i]<min)
+            {
+                min=mm[i];
+            }
+            if(mm[i]>max){
+                max=mm[i];
+            }
+        }
+        document.write("</br>"+min+" "+max+"<br>");
+        
+
+        mm.forEach((element) => {
+            document.write(element+" ");
+        });
+
+
+        document.write("<br>");
+        let multi=[
+            [1,"aniket",50],
+            [2,"raju",90],
+            [3,"shruti",80]
+        ];
+
+        for(let i=0;i<multi.length; i++)
+        {
+            for(let j=0;j<multi[i].length; j++){
+                document.write(multi[i][j]+" ");
+        }
+        document.write("<br>");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="parent">
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+        <li>e</li>
+    </ul>
+
+    <script>
+        var ele=document.createElement("li");
+        console.log(ele);
+
+        var newele=document.createTextNode("This is Text");
+        console.log(newele);
+
+        ele.appendChild(newele);
+        console.log(ele);
+
+        var target=document.getElementById("parent");
+        var oldele=target.children[1];
+
+        target.replaceChild(ele,oldele);
+
+        var remoele=target.children[3];
+        target.removeChild(remoele);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body {
+    font-family: Arial, sans-serif;
+    background-color:whitesmoke;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: papayawhip;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #333;
+    background-color: mediumaquamarine;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Health Tips</h1>
+        <p id="tip">Loading tips...</p>
+        <button id="nextButton">Next Tip</button>
+    </div>
+    <script>
+        const tips = [
+        "Drink plenty of water throughout the day.",
+        "Eat a balanced diet rich in fruits and vegetables.",
+        "Get at least 30 minutes of exercise every day.",
+        "Get a good night's sleep (7-9 hours).",
+        "Practice stress-reduction techniques like meditation or deep breathing.",
+        "Limit your consumption of sugary and processed foods.",
+        ];
+        const tips1 = [
+        "aqua",
+        "purple",
+        "salmon",
+        "yellow",
+        "coral",
+        "chartreuse",
+        ];
+
+        const tipElement = document.getElementById("tip");
+        const nextButton = document.getElementById("nextButton");
+
+        let currentTipIndex = 0;
+        let cIndex =0;
+        tipElement.setAttribute('style','');
+        function displayNextTip() {
+            tipElement.textContent = tips[currentTipIndex];
+            tipElement.style.backgroundColor =tips1[cIndex];
+            currentTipIndex = (currentTipIndex + 1) % tips.length;
+            cIndex = (cIndex+1)%tips1.length;
+        }
+
+        nextButton.addEventListener("click", displayNextTip);
+
+        // Display the first tip on page load
+        displayNextTip();
+    </script>
+</body>
+</html>

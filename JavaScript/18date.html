@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="dddate"></h1>
+
+    <script>
+        let da=new Date();
+        document.getElementById('dddate').innerHTML=da;
+
+
+        let dat=new Date("02-11-2022");
+        document.write(dat);
+
+        let dd=new Date(2022,11,6,2,5,23);
+        document.write("</br>"+dd+"</br>");
+        document.write(dd.getDay());
+
+        let date=new Date();
+        date.setDate(23);
+        document.write("<br>"+date+"<br>");
+        date.setFullYear(2025);
+        document.write(date);
+
+    </script>
+</body>
+</html>

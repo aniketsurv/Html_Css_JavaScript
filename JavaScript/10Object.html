@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="cccc" ></h1>
+    <h2 id="dddd"></h2>
+
+    <h1 id="persondetails"></h1>
+   
+    <script>
+        const car={
+            name:"KIA",
+            price:12000000,
+            color:"black"
+        };  
+        document.getElementById("cccc").innerHTML=car.name+" "+car.price+" "+car.color+"<br>";
+        document.getElementById("dddd").innerHTML=car['name']+" "+car['price']+" "+car['color']; 
+
+
+        const person={
+            firstname:"Aniket",
+            lastname:"Surve",
+            age:22,
+            fullname: function(){
+               return this.firstname+" "+this.lastname;
+            },
+            nobj:{
+                fname:"Raju",
+                lname:"Deshmukh",
+                age:25
+            }
+        };
+
+        document.getElementById("persondetails").innerHTML=person.fullname()+" "+person.nobj.lastname;
+
+        const secobj=new Object();
+        secobj.name='aniketsurve';
+        secobj.age=25;
+
+        document.write(secobj.name+" "+secobj.age);
+
+    </script>
+</body>
+</html>

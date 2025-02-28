@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CRUD_Using_LocalStorage</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+
+    <fieldset>
+        <legend id="lagend">This is Form</legend>
+        <form id="form">
+            <div>
+                <input type="text" id="name" name="name" placeholder="Name"> <br><br>
+            </div>
+            <div>
+                <input type="text" id="job" name="job" placeholder="Job"> <br><br>
+            </div>
+            <div>
+                <input type="text" id="exp" name="Experience" placeholder="Experience"> <br><br>
+            </div>
+            <div>
+                <input type="button" value="Submit" id="btn" onclick="Submit()">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </fieldset>
+    <br><br>
+    <div id="msg"></div><br>
+    <fieldset>
+        <legend>Local Storage</legend>
+        <table border="1" id="table">
+            <tr>
+                <td id="col">Name</td>
+                <td id="col">Job</td>
+                <td id="col">Experience</td>
+                <td id="col">Action</td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <script>
+
+        var row=null;
+
+        function Submit() {
+            var dataEntered=retriveValue();
+            //console.log(dataEntered);
+
+            var readData=readDataFromLocalStorage(dataEntered);
+            //console.log(readData);
+
+            if(row==null){
+                insert(readData);
+                msg.innerHTML="DataInserted";
+
+            }else{
+                update();
+                msg.innerHTML="DataUpdated";
+            }
+            
+           clear();
+        }
+
+        // retrive data from form
+        function retriveValue(){
+            var value1 = document.getElementById("name").value;
+            var job = document.getElementById("job").value;
+            var exp = document.getElementById("exp").value;
+
+            console.log(value1);
+
+            var arr=[value1,job,exp];
+            return arr; 
+        }
+
+        //read
+        // data in local storage
+        function readDataFromLocalStorage(dataEntered){
+            //store data in local storage
+           var n= localStorage.setItem("Name",dataEntered[0]);
+           var j= localStorage.setItem("Job",dataEntered[1]);
+           var e= localStorage.setItem("Experience",dataEntered[2]);
+           // getting values in local storage to table
+
+           var n1=localStorage.getItem("Name",n);
+           var j1=localStorage.getItem("Job",j);
+           var e1=localStorage.getItem("Experience",e);
+
+           var arr=[n1,j1,e1];
+           return arr;
+        }
+
+        // insert
+        function insert(readData){
+
+            var  row = table.insertRow(); // insertRow() method is  used for insert new row 
+            var cell1 = row.insertCell(0); // insertCell() method is used for insert new cell
+            var cell2 = row.insertCell(1); 
+            var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(3);
+            
+           cell1.innerHTML=readData[0];
+           cell2.innerHTML=readData[1];
+           cell3.innerHTML=readData[2];
+           cell4.innerHTML=`<button onclick="edit(this)">Edit</button> <button onclick="remove(this)">Delete</button>`;
+
+           // this is refers to the current row and its object/values
+           // it means like this cell1.innerHTML
+        }
+
+        //edit
+        function edit(td){
+            // td is not a element/column you can write any name
+            // It is  values inside element/column or value inside cell
+
+            row=td.parentElement.parentElement;
+            
+            document.getElementById("name").value=row.cells[0].innerHTML;
+            document.getElementById("job").value=row.cells[1].innerHTML;
+            document.getElementById("exp").value=row.cells[2].innerHTML;
+        }
+
+        function update(){
+            
+            row.cells[0].innerHTML=document.getElementById("name").value;
+            row.cells[1].innerHTML=document.getElementById("job").value;
+            row.cells[2].innerHTML=document.getElementById("exp").value;
+
+            row=null;
+            
+        }
+
+        function remove(td){
+            a=confirm("You Want to Delete");
+            if(a){
+                row=td.parentElement.parentElement;
+                document.getElementById("table").deleteRow(row.rowIndex);
+            }
+            else{
+                
+            }
+        }
+        
+        function clear(){
+            document.getElementById("name").value="";
+            document.getElementById("job").value="";
+            document.getElementById("exp").value="";
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+body{
+    background-color:lightblue;
+    opacity:0.9;
+}
+h1{
+   background-image: url('image5.jpeg');
+   background-repeat: no-repeat;
+   background-position: right top;
+}
+div{
+    background-color: pink;
+    border: solid 8px;
+    border-color:  wheat wheat wheat  blue ;
+}
+p{
+    background-color: aqua;
+    border-style: dotted;
+    border-width: 10px;
+    border-color: yellow;
+}
